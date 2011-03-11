@@ -1,0 +1,11 @@
+== Welcome to ActiveMerchant Adyen Demo App
+
+This app is intended to show how an application using adyen as payment provider could look like.
+It has cucumber tests for the whole workflow  ;)
+
+
+You need to be running a server with the app at port 8080 (adyen can only talk to a limited number of ports). See features + steps.
+Remember to set up adyen correctly and make sure the "Result URL for Test" page of adyen is pointing to your server  
+
+Also install the adyen active merchant fork from here as a plugin:
+	script/plugin install http://github.com/Vilango/active_merchant

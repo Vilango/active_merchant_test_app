@@ -1,0 +1,17 @@
+<h1>Purchase some stuff</h1>
+<p>Thank you for your decision to purchase our cool'n great stuff.</p>
+<p>Your order total is <%= @data[:price].format %></p>
+
+<% payment_service_for @data[:merchantReference], @data[:user_id],
+                              :amount => @data[:price].cents,
+                              :currency => @data[:price].currency,
+                              :service => :directebanking,
+                              :html => { :id => 'payment-form' } do |service| %>
+   <% service.project_password @data[:project_password] %>
+   <% service.project_id  @data[:project_id] %>
+   <% service.reason_1  @data[:reason_1] %>
+   <% service.reason_2  @data[:reason_2] %>  
+   <% service.user_variable_0  @data[:user_variable_0] %>
+   
+   <%= submit_tag 'Make Payment' %>   
+<% end %>

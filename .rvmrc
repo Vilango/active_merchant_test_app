@@ -1,0 +1,10 @@
+echo "********************************************"
+echo "RVM IS TAKING OVER"
+printf '\e[5;32;40m ree@active_merchant_test\e[m\n'
+
+echo "********************************************"
+
+# we are using ree on gemset called active_merchant_test
+
+rvm ree@active_merchant_test
+

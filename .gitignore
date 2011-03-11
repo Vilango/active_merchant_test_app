@@ -1,0 +1,5 @@
+config/initializers/env_adyen.rb
+config/initializers/env_directebanking.rb
+log/*.log
+webrat.log
+tmp
