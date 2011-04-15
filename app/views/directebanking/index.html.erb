@@ -5,10 +5,10 @@
 <% payment_service_for @data[:merchantReference], @data[:user_id],
                               :amount => @data[:price].cents,
                               :currency => @data[:price].currency,
+                              :credential2 => @data[:project_id],
+                              :credential3 => @data[:project_password],
                               :service => :directebanking,
                               :html => { :id => 'payment-form' } do |service| %>
-   <% service.project_password @data[:project_password] %>
-   <% service.project_id  @data[:project_id] %>
    <% service.reason_1  @data[:reason_1] %>
    <% service.reason_2  @data[:reason_2] %>  
    <% service.user_variable_0  @data[:user_variable_0] %>

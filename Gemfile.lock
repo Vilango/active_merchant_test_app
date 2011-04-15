@@ -6,7 +6,7 @@ GEM
     actionpack (2.3.11)
       activesupport (= 2.3.11)
       rack (~> 1.1.0)
-    activemerchant (1.12.0v)
+    activemerchant (1.12.1v)
       activesupport (>= 2.3.8)
       braintree (>= 2.0.0)
       builder (>= 2.0.0)
@@ -91,7 +91,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activemerchant (= 1.12.0v)
+  activemerchant (= 1.12.1v)
   capybara
   cucumber
   cucumber-rails
