@@ -5,7 +5,7 @@ gem "sqlite3-ruby", :require => "sqlite3"
 # bundler requires these gems in all environments
 # gem "nokogiri", "1.4.2"
 # gem "geokit"
-gem "activemerchant", '1.12.1v'
+gem "activemerchant", '1.12.1'
 gem 'money', '3.5.5'
 
 group :development do
